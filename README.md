@@ -5,13 +5,13 @@ A python solution for  Vigenère cipher which  uses a simple form of polyalphabe
 The program was broken down to the following functions:
 
 def text_processor(plain):
-This function takes in the supplied message and removes special characters and numbers and returns the plain text in upper case.
+This function takes in the supplied message, removes special characters,  numbers and returns the plain text in upper case.
 
 def key_generator(nplain,key):
-This function accepts the processed plain text and the supplied key. It generates the key by repeating itself to make sure, the key matches the length of the message.
+This function accepts the processed plain text and the supplied key. It generates the key by repeating it to make sure, the key matches the length of the message.
 
 def vigenere_encrypt(nplain,pkey):
-This fucntion takes in the auto generated key and the message and encrypts it by doing alphabetic substitution, then it returns the encrypted text.
+This fucntion takes in the auto generated key and the message. It encrypts it by doing alphabetic substitution, then it returns the encrypted text.
 
 def vigenere_decrypt(hashed,pkey):
 Lastly, decryption is done by taking the auto generated key and the hashed text and returning it to its orginal state, this function returns deciphered text.
